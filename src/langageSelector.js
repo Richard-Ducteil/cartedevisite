@@ -1,13 +1,13 @@
 import React, { useState } from 'react';
 import { FaGlobe } from 'react-icons/fa'; 
-import "../src/langageSelector.css";
+import "../src/langageSelector.css";  // Correction du chemin
 
 const LanguageSelector = ({ onChangeLanguage }) => {
   const [isOpen, setIsOpen] = useState(false);
 
   const toggleMenu = () => {
     setIsOpen(!isOpen);
-    console.log(isOpen); // Vérification de l'état isOpen
+    console.log(isOpen); 
   };
 
   const handleLanguageChange = (lang) => {

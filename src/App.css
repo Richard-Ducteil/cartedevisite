@@ -7,7 +7,7 @@ body {
   background-color: #000; /* Fond noir */
   color: #fff; /* Texte blanc pour contraste */
   overflow-x: hidden; /* Évite le défilement horizontal */
-  overflow-y: auto; /* Permet le défilement vertical */
+  overflow-y: auto; 
 }
 
 html, body, #root {

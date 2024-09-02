@@ -30,9 +30,9 @@
     }
   }
   
-  /* Le menu est caché par défaut */
+ 
   .dropdown-menu {
-    display: none;
+  
     flex-direction: column;
     position: absolute;
     top: 100%;
@@ -48,9 +48,9 @@
   }
   
   .language-selector.show .dropdown-menu {
-    display: flex; /* Montre le menu */
+    display: flex; 
     opacity: 1;
-    transform: translateX(-50%) translateY(10px); /* Ajoute un petit décalage pour l'effet de glissement */
+    transform: translateX(-50%) translateY(10px); 
   }
   
   .dropdown-menu button {

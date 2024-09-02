@@ -1,11 +1,10 @@
 import React, { useState, useRef } from "react";
 import { Points, PointMaterial } from "@react-three/drei";
-import { inSphere } from "maath/random"; // Utilisez la fonction correcte
+import { inSphere } from "maath/random";
 import { useFrame } from "@react-three/fiber";
 
 const StarBackground = () => {
   const ref = useRef();
-  // Utilisez la fonction `inSphere` pour générer les positions des étoiles
   const [sphere] = useState(() =>
     inSphere(new Float32Array(5000), { radius: 1.2 })
   );
