@@ -4,9 +4,9 @@ body {
   margin: 0;
   font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif;
   letter-spacing: 3px;
-  background-color: #000; /* Fond noir */
-  color: #fff; /* Texte blanc pour contraste */
-  overflow-x: hidden; /* Évite le défilement horizontal */
+  background-color: #000; 
+  color: #fff; 
+  overflow-x: hidden; 
   overflow-y: auto; 
 }
 
@@ -17,7 +17,7 @@ html, body, #root {
 
 .App {
   position: relative;
-  min-height: 100vh; /* Assure que le conteneur a toujours au moins la hauteur de l'écran */
+  min-height: 100vh;
 }
 
 .StarBackgroundCanvas {
@@ -26,7 +26,7 @@ html, body, #root {
   left: 0;
   width: 100%;
   height: 100%;
-  z-index: 1; /* Assure que le fond est derrière le contenu */
+  z-index: 1;
   overflow: hidden;
 }
 
@@ -37,8 +37,8 @@ html, body, #root {
   justify-content: center;
   align-items: center;
   text-align: center;
-  z-index: 2; /* Assure que le contenu est au-dessus du fond */
-  min-height: 100vh; /* Assure que le contenu occupe au moins toute la hauteur de l'écran */
+  z-index: 2; 
+  min-height: 100vh; 
   padding: 20px;
   letter-spacing: 3px;
 }
@@ -58,20 +58,20 @@ html, body, #root {
   opacity: 1;
 }
 
-/* Ajout de styles spécifiques pour les écrans plus petits */
+
 @media (max-width: 768px) {
   .logo {
-    width: 120px; /* Taille réduite pour les petits écrans */
+    width: 120px; 
     margin-bottom: 15px;
   }
 
   .logo:hover {
-    transform: rotate(360deg) scale(1.05); /* Légèrement moins de zoom pour les petits écrans */
+    transform: rotate(360deg) scale(1.05); 
   }
 }
 
 h1 {
-  font-size: clamp(36px, 8vw, 72px); /* Taille de police responsive */
+  font-size: clamp(36px, 8vw, 72px); 
   font-family: 'Orbitron', sans-serif;
   letter-spacing: 4px;
   background: linear-gradient(to right, #fefcfc, #34b3e1, #ffffff);
@@ -83,10 +83,10 @@ h1 {
 
 p {
   letter-spacing: 3px;
-  font-size: clamp(16px, 4vw, 24px); /* Taille de police responsive */
-  font-family: 'Orbitron', sans-serif; /* Application de la police futuriste */
-  margin: 20px 0; /* Réduit l'espace au-dessus et au-dessous */
-  line-height: 1.5; /* Augmente la lisibilité */
+  font-size: clamp(16px, 4vw, 24px); 
+  font-family: 'Orbitron', sans-serif; 
+  margin: 20px 0; 
+  line-height: 1.5; 
   background: linear-gradient(to right, #fefcfc, #34b3e1, #ffffff);
   -webkit-background-clip: text;
   -moz-background-clip: text;
@@ -103,7 +103,7 @@ p {
 }
 
 .tech-icon {
-  font-size: clamp(30px, 6vw, 50px); /* Taille d'icône responsive plus grande */
+  font-size: clamp(30px, 6vw, 50px);
   filter: drop-shadow(0 0 10px rgba(255, 255, 255, 0.8));
   transition: transform 0.3s ease, filter 0.3s ease;
 }
@@ -121,47 +121,47 @@ p {
 
 /* Couleurs des icônes */
 .react-icon {
-  color: #61DBFB; /* Couleur pour React */
+  color: #61DBFB;
 }
 
 .nextjs-icon {
-  color: #000000; /* Couleur pour Next.js */
+  color: #000000; 
 }
 
 .wordpress-icon {
-  color: #21759B; /* Couleur pour WordPress */
+  color: #21759B; 
 }
 
 /* Effets de survol */
 .tech-icon:hover {
-  transform: scale(1.1); /* Agrandit légèrement l'icône au survol */
-  filter: drop-shadow(0 0 15px rgba(255, 255, 255, 0.8)); /* Effet lumineux */
+  transform: scale(1.1);
+  filter: drop-shadow(0 0 15px rgba(255, 255, 255, 0.8)); 
 }
 
 .react-icon:hover {
-  color: #4FC1E9; /* Couleur alternative pour React au survol */
+  color: #4FC1E9; 
 }
 
 .nextjs-icon:hover {
-  color: #333333; /* Couleur alternative pour Next.js au survol */
+  color: #333333; 
 }
 
 .wordpress-icon:hover {
-  color: #1E7F9D; /* Couleur alternative pour WordPress au survol */
+  color: #1E7F9D;
 }
 
 .separator {
   border: none;
   height: 1px;
   background: linear-gradient(to right, #fefcfc, #34b3e1, #ffffff);
-  margin: 40px auto; /* Centre la ligne horizontalement avec espacement */
+  margin: 40px auto; 
   width: 30%;
 }
 
 .social-icons {
   display: flex;
   justify-content: center;
-  gap: 20px; /* Espacement entre les icônes */
+  gap: 20px; /* News pour espacer les icones entre eux  */
   margin-top: 15px;
   opacity: 1;
   transition: opacity 0.6s ease, transform 0.6s ease;
@@ -169,7 +169,7 @@ p {
 
 /* Icônes de réseaux sociaux */
 .social-icon {
-  font-size: clamp(10px, 2vw, 30px); /* Taille d'icône responsive ajustée */
+  font-size: clamp(10px, 2vw, 30px); /* Clamp pour ajuster la taille des icones pour qu'il soit responsive au maximum */
   transition: transform 0.3s ease, background 0.3s ease;
   display: flex;
   align-items: center;
@@ -178,7 +178,7 @@ p {
   border-radius: 50%;
 }
 
-/* Couleurs spécifiques pour Discord et Instagram */
+/* Couleurs spécifiques pour Discord et Instagram chatGPT*/
 .social-icon[href*="discord.com"] {
   color: #7289DA; /* Couleur de Discord */
 }
@@ -190,16 +190,16 @@ p {
   color:#D44638;
 }
 
-/* Effets de survol des icônes de réseaux sociaux */
+
 .social-icon {
   transition: transform 0.3s ease, box-shadow 0.3s ease, background 0.3s ease;
 }
 
 .social-icon:hover {
-  transform: scale(1.2) rotate(10deg); /* Agrandissement et rotation légère */
+  transform: scale(1.2) rotate(10deg); 
   background: linear-gradient(135deg, #fefcfc, #34b3e1, #ffffff);
   color: #000000;
-  box-shadow: 0 0 15px rgba(52, 179, 225, 0.7); /* Halo lumineux */
+  box-shadow: 0 0 15px rgba(52, 179, 225, 0.7); 
 }
 
 .translate-icon {
@@ -213,5 +213,62 @@ p {
 }
 
 .translate-icon:hover {
-  color: #34b3e1; /* Couleur au survol */
+  color: #34b3e1; 
 }
+.language-selector {
+  position: fixed; 
+  top: 20px; 
+  right: 20px; 
+  z-index: 2; 
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.translate-icon {
+  font-size: 24px;
+  color: #fff;
+  cursor: pointer;
+  transition: transform 0.3s ease;
+}
+
+.translate-icon:hover {
+  color: #34b3e1;
+  transform: scale(1.2);
+}
+
+.dropdown-menu {
+  display: none; 
+  position: absolute;
+  top: 40px;
+  left: 50%; 
+  transform: translateX(-50%);
+  background: rgba(0, 0, 0, 0.8); 
+  color: #fff;
+  border-radius: 5px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+  padding: 10px;
+  z-index: 3; 
+  transition: opacity 0.3s ease, transform 0.3s ease;
+}
+
+.language-selector.show .dropdown-menu {
+  display: block; 
+}
+
+.dropdown-menu button {
+  background: none;
+  border: none;
+  color: #fff;
+  padding: 10px;
+  cursor: pointer;
+  font-size: 16px;
+  border-radius: 3px;
+  transition: background 0.3s ease;
+}
+
+.dropdown-menu button:hover {
+  background: #34b3e1; 
+}
+
+
