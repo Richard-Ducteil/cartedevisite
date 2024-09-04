@@ -30,11 +30,11 @@ function App() {
 
   return (
     <div className="App">
+        <LanguageSelector onChangeLanguage={handleLanguageChange} />
       <div className="StarBackgroundCanvas">
         <Canvas camera={{ position: [0, 0, 1] }}>
           <StarBackground />
         </Canvas>
-        <LanguageSelector onChangeLanguage={handleLanguageChange} />
       </div>
 
       <div className="content">

@@ -1,6 +1,6 @@
 import React, { useState } from 'react';
 import { FaGlobe } from 'react-icons/fa'; 
-import "../src/langageSelector.css";  // Correction du chemin
+import "./langageSelector.css";  // Assure-toi que le chemin est correct
 
 const LanguageSelector = ({ onChangeLanguage }) => {
   const [isOpen, setIsOpen] = useState(false);
@@ -16,9 +16,16 @@ const LanguageSelector = ({ onChangeLanguage }) => {
   };
 
   return (
-    <div className={`language-selector ${isOpen ? 'show' : ''}`} onClick={toggleMenu}>
-      <FaGlobe className="translate-icon rotating-globe" />
-      <div className="dropdown-menu">
+    <div className="language-selector">
+      <FaGlobe 
+        className="translate-icon rotating-globe" 
+        onClick={toggleMenu} 
+        aria-haspopup="true" 
+        aria-expanded={isOpen} 
+        title="Change language"
+        aria-label="Change language"
+      />
+      <div className={`dropdown-menu ${isOpen ? 'show' : ''}`}>
         <button onClick={() => handleLanguageChange('en')}>English</button>
         <button onClick={() => handleLanguageChange('fr')}>Français</button>
       </div>
